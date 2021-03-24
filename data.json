@@ -1,0 +1,68 @@
+{
+    "projects": [
+        {
+           "id": 0,
+           "project_name": "Random Quote Generator",
+           "description": "Display random quote uisng JavaScript arrays and object notation",
+           "technologies": "HTML, CSS, JavaScript",
+           "live_link": "https://xyeres.github.io/random-quote/",
+           "github_link": "https://github.com/xyeres/random-quote",
+           "image_urls": [
+               "/img/random-1.PNG",
+               "/img/random-2.PNG"
+           ]
+        },
+        {
+            "id": 1,
+            "project_name": "Interactive Form",
+            "description": "Show off form validation.",
+            "technologies": "HTML, CSS, JavaScript",
+            "live_link": "https://xyeres.github.io/interactive-form-v3/",
+            "github_link": "https://github.com/xyeres/interactive-form-v3",
+            "image_urls": [
+                "/img/form-1.PNG",
+                "/img/form-2.PNG"
+            ]
+         },
+         {
+            "id": 2,
+            "project_name": "Random Phrase Game",
+            "description": "Object oriented based text game.",
+            "technologies": "HTML, CSS, JavaScript",
+            "live_link": "https://xyeres.github.io/oop-game-v2/",
+            "github_link": "https://github.com/xyeres/oop-game-v2",
+            "image_urls": [
+                "/img/phrase-app-1.PNG",
+                "/img/phrase-app-2.PNG"
+            ]
+         },
+         {
+            "id": 3,
+            "project_name": "Public API",
+            "description": "Public api powered user directory.",
+            "technologies": "Async Programming, JSON, HTML, CSS, JavaScript",
+            "live_link": "https://xyeres.github.io/public-api-request-v1/",
+            "github_link": "https://github.com/xyeres/public-api-request-v1",
+            "image_urls": [
+                "/img/api-app.PNG",
+                "/img/api-app-2.PNG"
+            ]
+         },
+         {
+            "id": 4,
+            "project_name": "CLI Weather App",
+            "description": "Command line app to help users check the weather.",
+            "technologies": "JavaScript, Node.js, Public API data",
+            "live_link": "",
+            "github_link": "https://github.com/xyeres/weather-cli",
+            "image_urls": [
+                "/img/cli-1.PNG",
+                "/img/cli-2.PNG"
+            ]
+         }
+    ]
+}
+
+
+
+
