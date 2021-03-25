@@ -14,13 +14,14 @@ router.get('/about', (req, res) =>{
 
 // Project
 router.get('/project/:id', (req, res) => {
-    const project = projects[id];
-    res.render("project", { project });
+    const { id } = req.params;
+    const proj = projects[id];
+    res.render("project", { proj });
 });
 
 // Test error handling
 router.get('/error', (req, res, next) => {
-    const err = new Error('Something Has Gone Off!');
+    const err = new Error('Something Has Gone Wrong!');
     err.status = 500;
     next(err);
 })
