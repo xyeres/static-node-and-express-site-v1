@@ -1,0 +1,15 @@
+extends layout.pug 
+
+block content 
+  nav.nav
+      a(href='/')
+        span &larr;
+        |  Back
+
+  article.portfolio-projects
+    .inner-wrapper.flex-row-wrap.two-col
+      .project-info-box.box
+        img(src="/static/img/404.jpg", alt="Page not found doggo.", width="550px")
+        h2 #{err.status} #{err.message}
+
+        p Looks like you found a page that doesn't exist!

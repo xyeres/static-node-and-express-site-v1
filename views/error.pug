@@ -1,0 +1,18 @@
+extends layout.pug 
+
+block content 
+  nav.nav
+      a(href='/')
+        span &larr;
+        |  Back
+
+  article.portfolio-projects
+    .inner-wrapper.flex-row-wrap.two-col
+      .project-info-box.box
+        img(src="/static/img/pug.jpg", alt="An error doggy", width="550px")
+        h2 #{err.message}
+
+        h3 The server returned a status code #{err.status}
+        hr
+        p For the inqusitive, here's the stack trace:
+        code= err.stack
