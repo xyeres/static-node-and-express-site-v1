@@ -17,6 +17,7 @@ app.use('/', routes);
 app.use(function (req, res, next) {
     const err = new Error('Sorry, that page cannot be found.');
     err.status = 404;
+    console.log(`${err.message} (${err.status})`);
     res.render('page-not-found', { err })
 });
 
@@ -27,7 +28,7 @@ app.use(function(err, req, res, next) {
     // Set response status code
     res.status(err.status || 500);
     // Log it out
-    console.error(`${err.message} (${err.status})`)
+    console.log(`${err.message} (${err.status})`);
     // Render a simple error page to user
     res.render('error', { err })
 });
