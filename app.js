@@ -17,7 +17,7 @@ app.use('/', routes);
 app.use(function (req, res, next) {
     const err = new Error('Sorry, that page cannot be found.');
     err.status = 404;
-    next(err);
+    res.render('page-not-found', { err })
 });
 
 // Error handler
@@ -29,7 +29,9 @@ app.use(function(err, req, res, next) {
     // Log it out
     console.error(`${err.message} (${err.status})`)
     // Render a simple error page to user
-    res.send(`<h1>${err.message}</h1> A ${err.status} error occurred <p>${err.stack}</p>`)
+    res.render('error', { err })
 });
 
-app.listen('3000');
+app.listen('3000', () => {
+    console.log('App running on localhost and listening on port 3000...:)')
+});
